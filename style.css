@@ -10,6 +10,18 @@
     background-color: rgb(100, 17, 234);
     color: white;
 }
-.display{
 
+.cost p,.unit p,.margin p{
+    background-color: aliceblue;
+    color: black;
+    border-radius: 10px;
+    padding: 0 10px;
+
+}
+.cost,.unit,.margin{
+    padding: 0 10px;
+    
+}
+[contenteditable] {
+    outline: 0px solid transparent;
 }

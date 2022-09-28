@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
     <title>Margin calculator</title>
   </head>
   <body>
@@ -12,16 +13,25 @@
       <div class="inputs">
         <div class="cost_container">
           <p>Cost Per Unit</p>
-          <div class="cost"></div>
+          <div class="cost" id="cost"></div>
         </div>
         <div class="unit_container">
           <p>Number Unit</p>
-          <div class="units"></div>
+          <div class="unit" id="unit"></div>
         </div>
         <div class="margin_container">
           <p>Mark up</p>
-          <div class="margin"></div>
+          <div class="margin" id="margin"></div>
         </div>
+      </div>
+      <div class="display">
+        <div class="details">
+          <p>selling price per unit: <span class="selling_price"></span></p>
+
+          <p>Total revenue: <span class="revenue"></span></p>
+          <p>Total cost: <span class="total_cost"></span></p>
+        </div>
+        <p>Your Profit is: <span class="profit"></span></p>
       </div>
     </div>
   </body>
