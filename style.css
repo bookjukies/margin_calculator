@@ -5,6 +5,8 @@
 --Result_bg :#30355a; 
 --Btn_bg    :#1b4f5d; 
 --Res  :#4b9bfb; 
+--small_res: #89ebf8;
+--shadow: rgb(55, 54, 77);
 
 }
 body{
@@ -31,13 +33,17 @@ body{
     background-color: var(--Cal_bg);
     width: 60vw;
     border-radius: 0 0 2vh 2vh;
-    padding: 0 2vw 2vh 2vw ;
+    padding: 0 2vw 3vw 2vw ;
 }
 .tab{
+
     height: 60px;
     grid-area: header;
     background-color: var(--Head_bg);
     border-radius: 2vh 2vh 0px 0px ;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
 }
 
 
@@ -50,6 +56,7 @@ body{
 .inputs div{
 
     color: white;
+    font-size: 1.2rem;
 }
 
 .cost p,.unit p,.margin p{
@@ -66,20 +73,47 @@ body{
 }
 .cost,.unit,.margin{
     
-    
 }
 [contenteditable] {
     outline: 0px solid transparent;
 }
 .display{
     background-color: var(--Result_bg);
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
+    padding: 2vw;
+    border-radius: 1rem;
+        box-shadow: -2px -2px 2px var(--Outer_bg),
+                2px 2px 2px var(--Outer_bg);
 
+}
+.profit_text{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-align: center;
 }
 .profit{
     font-size: 3rem;
     font-weight: bold;
     color: var(--Res);
     display: block;
+}
+.details{
+    color: var(--small_res);
+    font-size: 1.2rem;
+}
+.details span{
+    display: block;
+    font-size: 1.4rem;
+    color: white;
+}
+.container{
+        box-shadow: -4px -4px 4px var(--shadow),
+                4px 4px 4px var(--shadow);
+                border-radius: 1vw;
+
+}
+.logo{
+    height: 30px;
 }

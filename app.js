@@ -24,13 +24,18 @@ function input_clb(event) {
     }
     if (current == `unit`) {
       unit = number;
-      total_cost.textContent = cost * unit;
+      total_cost.textContent = `${(cost * unit).toLocaleString()}`;
     }
     if (current == `margin`) {
       margin = number;
-      profit.textContent = cost * unit + margin * unit - cost * unit;
-      revenue.textContent = cost * unit + margin * unit;
-      selling_price.textContent = cost + margin;
+      console.log(number.toLocaleString());
+      profit.textContent = `${(
+        cost * unit +
+        margin * unit -
+        cost * unit
+      ).toLocaleString()}`;
+      revenue.textContent = `${(cost * unit + margin * unit).toLocaleString()}`;
+      selling_price.textContent = `${(cost + margin).toLocaleString()}`;
     }
   }
 }
@@ -45,6 +50,3 @@ inputs.forEach((input) => {
 
   para.addEventListener(`input`, input_clb);
 });
-
-// tester = 123456;
-// console.log(tester.toLocaleString());
