@@ -45,3 +45,6 @@ inputs.forEach((input) => {
 
   para.addEventListener(`input`, input_clb);
 });
+
+// tester = 123456;
+// console.log(tester.toLocaleString());
